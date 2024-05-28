@@ -1,0 +1,22 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajax-unobtrusive/3.2.6/jquery.unobtrusive-ajax.min.js"></script>
+}
+
+@model ajax2.Models.Customer;
+
+<div id="panel">
+
+<h3>Customer Details</h3>
+@Html.DisplayNameFor(m => Model.Name):@Html.DisplayFor(m => Model.Name)
+<br />
+@Html.DisplayNameFor(m => Model.Age):@Html.DisplayFor(m => Model.Age)
+<br />
+<p>Updated at @DateTime.Now</p>
+
+</div>
